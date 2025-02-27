@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bob Esponja y Patricio</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: darkblue;
+            text-shadow: 2px 2px 4px gray;
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        h2 {
+            font-size: 30px;
+            font-style: italic;
+        }
+        .box h2:first-child {
+            color: darkgoldenrod;
+        }
+        .box:nth-child(2) h2 {
+            color: darkred;
+        }
+        p {
+            font-size: 18px;
+            width: 80%;
+            margin: 20px auto;
+            line-height: 1.5;
+            word-spacing: 2px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border: 2px solid darkblue;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start;
+            max-width: 1000px;
+            padding: 20px;
+        }
+        .box {
+            width: 45%;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border: 2px solid darkblue;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+        }
+        .box:nth-child(2) {
+            background-color: pink;
+        }
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .box {
+                width: 90%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Bob Esponja y Patricio</h1>
+    <div class="container">
+        <div class="box">
+            <h2>Bob Esponja</h2>
+            <p>
+                "Bob Esponja" es una caricatura animada que sigue las aventuras de Bob Esponja, 
+                una esponja marina optimista y trabajadora, que vive en una piña bajo el mar en Fondo de Bikini. 
+                Junto con su mejor amigo, Patricio Estrella, un despistado pero adorable estrella de mar, 
+                Bob Esponja se embarca en diversas aventuras mientras trabaja en el Crustáceo Cascarudo.
+            </p>
+        </div>
+        <div class="box">
+            <h2>Patricio</h2>
+            <p>
+                Patricio Estrella es una estrella de mar rosada que es el mejor amigo de Bob Esponja. 
+                Aunque no es muy inteligente, su corazón es grande y siempre está dispuesto a acompañar a 
+                Bob Esponja en cualquier aventura, ya sea cazar medusas o simplemente relajarse bajo una roca.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
